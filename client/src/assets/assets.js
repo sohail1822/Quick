@@ -21,49 +21,56 @@ export const assets = {
 };
 
 export const AiToolsData = [
-    {
-        title: 'AI Article Writer',
-        description: 'Generate high-quality, engaging articles on any topic with our AI writing technology.',
-        Icon: SquarePen,
-        bg: { from: '#3588F2', to: '#0BB0D7' },
-        path: '/ai/write-article'
-    },
-    {
-        title: 'Blog Title Generator',
-        description: 'Find the perfect, catchy title for your blog posts with our AI-powered generator.',
-        Icon: Hash,
-        bg: { from: '#B153EA', to: '#E549A3' },
-        path: '/ai/blog-titles'
-    },
-    {
-        title: 'AI Image Generation',
-        description: 'Create stunning visuals with our AI image generation tool, Experience the power of AI ',
-        Icon: Image,
-        bg: { from: '#20C363', to: '#11B97E' },
-        path: '/ai/generate-images'
-    },
-    {
-        title: 'Background Removal',
-        description: 'Effortlessly remove backgrounds from your images with our AI-driven tool.',
-        Icon: Eraser,
-        bg: { from: '#F76C1C', to: '#F04A3C' },
-        path: '/ai/remove-background'
-    },
-    {
-        title: 'Object Removal',
-        description: 'Remove unwanted objects from your images seamlessly with our AI object removal tool.',
-        Icon: Scissors,
-        bg: { from: '#5C6AF1', to: '#427DF5' },
-        path: '/ai/remove-object'
-    },
-    {
-        title: 'Resume Reviewer',
-        description: 'Get your resume reviewed by AI to improve your chances of landing your dream job.',
-        Icon: FileText,
-        bg: { from: '#12B7AC', to: '#08B6CE' },
-        path: '/ai/review-resume'
-    }
-]
+  {
+    title: 'AI Article Writer',
+    description:
+      'Craft high-quality, SEO-optimized articles on any topic in seconds using advanced AI writing technology.',
+    Icon: SquarePen,
+    bg: { from: '#3588F2', to: '#0BB0D7' },
+    path: '/ai/write-article',
+  },
+  {
+    title: 'Blog Title Generator',
+    description:
+      'Instantly generate catchy, impactful titles for your blog posts with our AI-powered creativity engine.',
+    Icon: Hash,
+    bg: { from: '#B153EA', to: '#E549A3' },
+    path: '/ai/blog-titles',
+  },
+  {
+    title: 'AI Image Generator',
+    description:
+      'Transform your ideas into stunning visuals with our intelligent AI image generation tool.',
+    Icon: Image,
+    bg: { from: '#20C363', to: '#11B97E' },
+    path: '/ai/generate-images',
+  },
+  {
+    title: 'Background Remover',
+    description:
+      'Remove image backgrounds instantly and effortlessly with our precise AI background remover.',
+    Icon: Eraser,
+    bg: { from: '#F76C1C', to: '#F04A3C' },
+    path: '/ai/remove-background',
+  },
+  {
+    title: 'Object Remover',
+    description:
+      'Clean up your photos by removing unwanted objects flawlessly using AI-powered detection.',
+    Icon: Scissors,
+    bg: { from: '#5C6AF1', to: '#427DF5' },
+    path: '/ai/remove-object',
+  },
+  {
+    title: 'Resume Reviewer',
+    description:
+      'Enhance your resume with personalized AI feedback to boost your chances of landing your dream job.',
+    Icon: FileText,
+    bg: { from: '#12B7AC', to: '#08B6CE' },
+    path: '/ai/review-resume',
+  },
+];
+
 
 export const dummyTestimonialData = [
     {
