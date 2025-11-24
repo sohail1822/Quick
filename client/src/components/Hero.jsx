@@ -15,8 +15,9 @@ const Hero = () => {
         <br />
         <p>
           Boost your creativity and productivity using our intelligent tools.
-          From writing engaging articles to generating high-quality images and
-          optimizing your workflow — everything you need to bring ideas to life
+          <br></br>From writing engaging articles to generating high-quality images and
+          optimizing your workflow — 
+          <br></br>everything you need to bring ideas to life
           is here.
         </p>
       </div>

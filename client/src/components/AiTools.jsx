@@ -11,7 +11,7 @@ const AiTools = () => {
       <div className="text-center">
         <h2 className="text-slate-700 text-[42px] font-semibold">
           Transform Your
-          <br></br>Workflow with AI
+          <br></br>Workflow with  <span className="text-primary">AI</span>
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mt-4 text-lg leading-relaxed">
           Explore a suite of intelligent tools designed to help you write
@@ -21,7 +21,7 @@ const AiTools = () => {
         </p>
       </div>
 
-     < div className="flex flex-wrap mt-10 justify-center">
+      < div className="flex flex-wrap mt-10 justify-center">
         {AiToolsData.map((tool, index) => (
           <div
             key={index}

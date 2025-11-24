@@ -5,20 +5,18 @@ const Footer = () => {
   return (
     <footer className="w-full mt-20 bg-[#2a2a2a] text-gray-300">
       <div className="px-6 md:px-16 lg:px-24 xl:px-32 py-12 border-b border-gray-800 flex flex-col md:flex-row justify-between gap-12">
-        {/* Logo & Description */}
         <div className="md:max-w-sm">
           <img className="h-9" src={assets.logo} alt="Logo" />
           <p className="mt-6 text-sm leading-relaxed text-gray-300">
             Experience the future of productivity with{" "}
-            <span className="text-white font-medium">QuickAI</span> — your
+            <span className="text-white font-medium">QuickAI</span>—your
             all-in-one AI assistant for writing, designing, and coding.
             <br /> Empower your creativity and efficiency today.
           </p>
         </div>
 
-        {/* Company Links & Newsletter */}
+
         <div className="flex-1 flex flex-col sm:flex-row justify-start md:justify-end gap-12">
-          {/* Company Links */}
           <div>
             <h2 className="font-semibold mb-5 text-white tracking-wide">
               Company
