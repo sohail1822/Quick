@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import GenerateImages from "./pages/GenerateImages.jsx";
-import BlogTitle from "./pages/BlogTitles.jsx";
+import BlogTitles from "./pages/BlogTitles.jsx";
 import Layout from "./pages/Layout.jsx";
 import WriteArticle from "./pages/WriteArticle.jsx";
 import RemoveBackground from "./pages/RemoveBackground.jsx";
@@ -18,8 +18,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/ai" element={<Layout />}>
           <Route index element={<Dashboard />} />
-          <Route path="write-article" element={<WriteArticle />} />
-          <Route path="blog-titles" element={<BlogTitle />} />
+          <Route path="write-articles" element={<WriteArticle />} />
+          <Route path="blog-titles" element={<BlogTitles />} />
           <Route path="generate-images" element={<GenerateImages />} />
           <Route path="remove-background" element={<RemoveBackground />} />
           <Route path="remove-object" element={<RemoveObject />} />

@@ -7,7 +7,7 @@ import { LogOut } from "lucide-react";
 
 const navItems = [
   { to: '/ai', label: 'Dashboard', Icon: House },
-  { to: '/ai/write-aticles', label: 'Write Articles', Icon: SquarePen },
+  { to: '/ai/write-articles', label: 'Write Articles', Icon: SquarePen },
   { to: '/ai/blog-titles', label: 'Blog Titles', Icon: Hash },
   { to: '/ai/generate-images', label: 'Generate Images', Icon: Image },
   { to: '/ai/remove-background', label: 'Remove Background', Icon: Eraser },
@@ -37,7 +37,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
         <h1 className="mt-2 text-center font-medium">{user.fullName}</h1>
         <div className="px-4 mt-6 text-sm text-gray-600 font-medium">
           {navItems.map(({ to, label, Icon }) => (
-            <NavLink key={to} to={to} end={to === '/a1'} onClick={() =>
+            <NavLink key={to} to={to} end={to === '/ai'} onClick={() =>
               setSidebar(false)} className={({ isActive }) => `px-3.5 py-2.5 flex items-center gap-3 rounded ${isActive ? 'bg-gradient-to-r from-[#3C81F6] to-[#9234EA] text-white' : ''}`}>
               {({ isActive }) => (
                 <>
