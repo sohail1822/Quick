@@ -110,6 +110,7 @@ export const generateImage = async (req, res) => {
         const { userId } = req.auth();
         const { prompt, publish } = req.body;
         const plan = req.plan;
+        console.log("User plan is ", plan);
 
         if (plan !== "premium") {
             return res.json({
@@ -143,7 +144,7 @@ export const generateImage = async (req, res) => {
         VALUES (${userId},${prompt},${secure_url},'image', ${publish ?? false
             })`;
 
-        res.json({ sucess: true, content: secure_url });
+        res.json({ success: true, content: secure_url });
     } catch (error) {
         console.log(error.message);
 
@@ -160,8 +161,9 @@ export const generateImage = async (req, res) => {
 export const removeImageBackground = async (req, res) => {
     try {
         const { userId } = req.auth();
-        const { image } = req.file;
+        const image = req.file;
         const plan = req.plan;
+        console.log("User plan", plan);
 
         if (plan !== "premium") {
             return res.json({
@@ -182,7 +184,7 @@ export const removeImageBackground = async (req, res) => {
         await sql`INSERT INTO creations (user_id, prompt, content, type)
         VALUES (${userId},'Remove Background from image',${secure_url},'image')`;
 
-        res.json({ sucess: true, content: secure_url });
+        res.json({ success: true, content: secure_url });
     } catch (error) {
         console.log(error.message);
         res.json({ success: false, message: error.message });
@@ -193,9 +195,10 @@ export const removeImageObject = async (req, res) => {
     try {
         const { userId } = req.auth();
         const { object } = req.body;
-        const { image } = req.file;
+        const image = req.file;
         const plan = req.plan;
 
+        // console.log("Your request is here");
         if (plan !== "premium") {
             return res.json({
                 success: false,
@@ -213,7 +216,7 @@ export const removeImageObject = async (req, res) => {
         await sql`INSERT INTO creations (user_id, prompt, content, type)
         VALUES (${userId},${`Removed ${object} from image`},${imageUrl},'image')`;
 
-        res.json({ sucess: true, content: imageUrl });
+        res.json({ success: true, content: imageUrl });
     } catch (error) {
         console.log(error.message);
         res.json({ success: false, message: error.message });
@@ -242,8 +245,6 @@ export const resumeReview = async (req, res) => {
 
         const dataBuffer = fs.readFileSync(resume.path);
         const pdfData = await extractPdfText(dataBuffer);
-
-        // const prompt = `Review the following resume and provide constructive feedback on its strengths , weakness and areas for improvements . Resume Content:\n\n${pdfData.text}`
         const prompt = ` Review the following resume and provide detailed feedback:
                             • Strengths
                             • Weaknesses
@@ -268,7 +269,7 @@ export const resumeReview = async (req, res) => {
         await sql`INSERT INTO creations (user_id, prompt, content, type)
         VALUES (${userId},${"Review the uploaded resume"},${content},'resume-review');`;
 
-        res.json({ sucess: true, content });
+        res.json({ success: true, content });
     } catch (error) {
         console.log(error.message);
         res.json({ success: false, message: error.message });
