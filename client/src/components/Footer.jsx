@@ -3,13 +3,13 @@ import { assets } from "../assets/assets";
 
 const Footer = () => {
   return (
-    <footer className="w-full mt-20 bg-[#2a2a2a] text-gray-300">
+    <footer className="w-full mt-20 text-gray-500">
       <div className="px-6 md:px-16 lg:px-24 xl:px-32 py-12 border-b border-gray-800 flex flex-col md:flex-row justify-between gap-12">
         <div className="md:max-w-sm">
           <img className="h-9" src={assets.logo} alt="Logo" />
-          <p className="mt-6 text-sm leading-relaxed text-gray-300">
+          <p className="mt-6 text-sm leading-relaxed ">
             Experience the future of productivity with{" "}
-            <span className="text-white font-medium">QuickAI</span>—your
+            <span className="font-medium">QuickAI</span>—your
             all-in-one AI assistant for writing, designing, and coding.
             <br /> Empower your creativity and efficiency today.
           </p>
@@ -62,7 +62,7 @@ const Footer = () => {
             <h2 className="font-semibold mb-5 text-white tracking-wide">
               Subscribe to our newsletter
             </h2>
-            <p className="text-sm text-gray-300 leading-relaxed">
+            <p className="text-sm leading-relaxed">
               Get the latest news, articles, and resources delivered weekly.
             </p>
             <div className="flex items-center gap-2 pt-4">
@@ -80,7 +80,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <p className="py-5 text-center text-xs md:text-sm text-gray-300 border-t border-gray-800">
+      <p className="py-5 text-center text-xs md:text-sm">
         © 2025 Sohail Shaikh. All Rights Reserved.
       </p>
     </footer>
