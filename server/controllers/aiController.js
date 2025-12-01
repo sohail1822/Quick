@@ -243,8 +243,12 @@ export const resumeReview = async (req, res) => {
             });
         }
 
-        const dataBuffer = fs.readFileSync(resume.path);
-        const pdfData = await extractPdfText(dataBuffer);
+        // const dataBuffer = fs.readFileSync(resume.path);
+        const pdfData = await extractPdfText(resume.path);
+
+        console.log("PDFdata is ", pdfData);
+
+
         const prompt = ` Review the following resume and provide detailed feedback:
                             • Strengths
                             • Weaknesses
