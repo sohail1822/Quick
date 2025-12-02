@@ -1,6 +1,11 @@
 import express from 'express';
 // import { auth } from '../middlewares/auth.js';
-import { generateArticle, generateBlogTitle, generateImage, removeImageBackground, removeImageObject, resumeReview } from '../controllers/aiController.js';
+import { generateArticle } from '../controllers/generateArticle.js';
+import { generateBlogTitle } from '../controllers/generateBlogTitle.js';
+import { generateImage } from '../controllers/generateImage.js';
+import { removeImageBackground } from '../controllers/removeImageBackground.js';
+import { removeImageObject } from '../controllers/removeImageObject.js';
+import { resumeReview } from '../controllers/resumeReview.js';
 import { upload } from "../configs/multer.js"
 
 const aiRouter = express.Router();
