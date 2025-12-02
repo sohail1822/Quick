@@ -9,6 +9,7 @@ QuickAI is a modern web application built with React and Express.js that leverag
 ## Features
 
 ### AI Tools Available:
+
 - **Article Generation** - Generate full articles based on prompts with customizable length
 - **Blog Title Generation** - Create engaging blog titles for your content
 - **Image Generation** - Generate images using AI
@@ -18,6 +19,7 @@ QuickAI is a modern web application built with React and Express.js that leverag
 - **Community** - Connect with other users
 
 ### Key Features:
+
 - **User Authentication** - Secure authentication powered by Clerk
 - **Subscription Plans** - Free and Premium plans with usage limits
 - **File Uploads** - Support for image and PDF document uploads via Cloudinary
@@ -27,6 +29,7 @@ QuickAI is a modern web application built with React and Express.js that leverag
 ## Tech Stack
 
 ### Frontend
+
 - **React** 19.2.0 - UI framework
 - **Vite** - Build tool and dev server
 - **Tailwind CSS** - Utility-first CSS framework
@@ -38,6 +41,7 @@ QuickAI is a modern web application built with React and Express.js that leverag
 - **Lucide React** - Icon library
 
 ### Backend
+
 - **Express** 5.1.0 - Web framework
 - **Node.js** - JavaScript runtime
 - **OpenAI API** - AI model access (Gemini 2.0 Flash)
@@ -77,6 +81,7 @@ QuickAI/
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v16 or higher)
 - npm or yarn
 - PostgreSQL database (Neon)
@@ -108,17 +113,20 @@ For the client, create a `.env.local` file:
 
 ```env
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+VITE_BASE_URL=your_backend_url
 ```
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/sohail1822/Quick.git
    cd Quick
    ```
 
 2. **Install server dependencies**
+
    ```bash
    cd server
    npm install
@@ -133,34 +141,41 @@ VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 ### Running the Application
 
 **Terminal 1 - Start the Backend Server:**
+
 ```bash
 cd server
 npm run server
 ```
+
 The server will run on `http://localhost:3000`
 
 **Terminal 2 - Start the Frontend Development Server:**
+
 ```bash
 cd client
 npm run dev
 ```
+
 The client will typically run on `http://localhost:5173`
 
 ## Available Scripts
 
 ### Client Scripts
+
 - `npm run dev` - Start development server with hot reload
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
 ### Server Scripts
+
 - `npm run server` - Start server with nodemon (auto-reload)
 - `npm start` - Start server (production)
 
 ## API Endpoints
 
 ### AI Routes (`/api/ai`)
+
 - `POST /generate-article` - Generate an article
 - `POST /generate-blog-title` - Generate blog titles
 - `POST /generate-image` - Generate images
@@ -169,6 +184,7 @@ The client will typically run on `http://localhost:5173`
 - `POST /resume-review` - Review and analyze resume
 
 ### User Routes (`/api/user`)
+
 - User-related endpoints for profile and subscription management
 
 **Note:** All routes require authentication.
@@ -176,6 +192,7 @@ The client will typically run on `http://localhost:5173`
 ## Authentication
 
 The application uses **Clerk** for secure authentication:
+
 - Sign up and sign in functionality
 - User metadata storage for tracking usage
 - Free tier usage limits (10 free uses per feature)
@@ -184,32 +201,19 @@ The application uses **Clerk** for secure authentication:
 ## Features Details
 
 ### Subscription Model
+
 - **Free Plan**: Limited usage (10 uses per feature)
 - **Premium Plan**: Unlimited usage
 
 ### AI Models Used
+
 - **Gemini 2.0 Flash** - Text and content generation
 - **Cloudinary API** - Image manipulation
-
-## Deployment
-
-### Frontend (Vercel recommended)
-```bash
-cd client
-npm run build
-```
-Deploy the `dist` folder to Vercel or your preferred hosting.
-
-### Backend (Render, Railway, or similar)
-```bash
-cd server
-npm start
-```
-Ensure all environment variables are configured in your deployment platform.
 
 ## Contributing
 
 Contributions are welcome! Please follow these steps:
+
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
@@ -223,16 +227,5 @@ This project is licensed under the ISC License.
 ## Support
 
 For support or questions, please reach out or open an issue on the GitHub repository.
-
-## Roadmap
-
-- [ ] Advanced analytics dashboard
-- [ ] More AI features (translation, summarization)
-- [ ] Social sharing capabilities
-- [ ] API documentation
-- [ ] Mobile app development
-- [ ] Batch processing for multiple files
-
----
 
 **Built with ❤️ by Sohail**
