@@ -16,15 +16,6 @@ QuickAI is a modern web application built with React and Express.js that leverag
 - **Background Removal** - Remove backgrounds from images
 - **Object Removal** - Remove unwanted objects from photos
 - **Resume Review** - Analyze and review resume documents
-- **Community** - Connect with other users
-
-### Key Features:
-
-- **User Authentication** - Secure authentication powered by Clerk
-- **Subscription Plans** - Free and Premium plans with usage limits
-- **File Uploads** - Support for image and PDF document uploads via Cloudinary
-- **Responsive UI** - Mobile-friendly interface built with React and Tailwind CSS
-- **Real-time Notifications** - Toast notifications for user feedback
 
 ## Tech Stack
 
@@ -35,10 +26,6 @@ QuickAI is a modern web application built with React and Express.js that leverag
 - **Tailwind CSS** - Utility-first CSS framework
 - **React Router DOM** - Client-side routing
 - **Clerk React** - Authentication
-- **Axios** - HTTP client
-- **React Hot Toast** - Toast notifications
-- **React Markdown** - Markdown rendering
-- **Lucide React** - Icon library
 
 ### Backend
 
@@ -46,10 +33,6 @@ QuickAI is a modern web application built with React and Express.js that leverag
 - **Node.js** - JavaScript runtime
 - **OpenAI API** - AI model access (Gemini 2.0 Flash)
 - **PostgreSQL** - Database (via Neon)
-- **Cloudinary** - Image storage and manipulation
-- **Clerk Express** - Authentication middleware
-- **Multer** - File upload handling
-- **CORS** - Cross-Origin Resource Sharing
 
 ## Project Structure
 
@@ -79,15 +62,6 @@ QuickAI/
 ```
 
 ## Getting Started
-
-### Prerequisites
-
-- Node.js (v16 or higher)
-- npm or yarn
-- PostgreSQL database (Neon)
-- Cloudinary account
-- OpenAI/Gemini API key
-- Clerk account for authentication
 
 ### Environment Variables
 
@@ -158,20 +132,6 @@ npm run dev
 
 The client will typically run on `http://localhost:5173`
 
-## Available Scripts
-
-### Client Scripts
-
-- `npm run dev` - Start development server with hot reload
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-
-### Server Scripts
-
-- `npm run server` - Start server with nodemon (auto-reload)
-- `npm start` - Start server (production)
-
 ## API Endpoints
 
 ### AI Routes (`/api/ai`)
@@ -188,27 +148,6 @@ The client will typically run on `http://localhost:5173`
 - User-related endpoints for profile and subscription management
 
 **Note:** All routes require authentication.
-
-## Authentication
-
-The application uses **Clerk** for secure authentication:
-
-- Sign up and sign in functionality
-- User metadata storage for tracking usage
-- Free tier usage limits (10 free uses per feature)
-- Premium subscription support
-
-## Features Details
-
-### Subscription Model
-
-- **Free Plan**: Limited usage (10 uses per feature)
-- **Premium Plan**: Unlimited usage
-
-### AI Models Used
-
-- **Gemini 2.0 Flash** - Text and content generation
-- **Cloudinary API** - Image manipulation
 
 ## Contributing
 
